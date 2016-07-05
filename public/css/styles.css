@@ -1,0 +1,270 @@
+/********************************
+    Bootstrap overrides
+ ********************************/
+ @media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        margin: 15px 0 0;
+    }
+}
+
+/********************************
+    General setup
+ ********************************/
+body {
+    font-family: normal x-small Verdana, Geneva, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.text-compress {
+    margin-bottom: 0;
+}
+
+/********************************
+    Header
+ ********************************/
+#header {
+    margin-left: 2%;
+}
+
+#header-text h1 {
+    color: #ff4500;
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 2.3em;
+    line-height: 0.3em;
+}
+
+#header-text h2 {
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 0.84em;
+    color: #777;
+    position: relative;
+    top: -0.9em;
+}
+
+#logo img {
+    width: 37px;
+    heigt: 51px;
+    float: left;
+}
+
+#header-text {
+    float: left;
+    margin-left: 10px;
+}
+
+@media (min-width: 419px) {
+    #logo img {
+        width: 54px;
+        heigt: 75px;
+    }
+
+    #header-text h1 {
+        font-size: 4.1em;
+    }
+
+    #header-text h2 {
+        font-size: 1.5em;
+        top: -0.4em;
+    }
+}
+
+@media (min-width: 750px) {
+    #logo img {
+        width: 72px;
+        heigt: 101px;
+    }
+
+    #header-text h1 {
+        font-size: 6em;
+        line-height: 0.5em;
+    }
+
+    #header-text h2 {
+        font-size: 2.2em;
+        top: -0.4em;
+    }
+}
+
+#header-hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  margin-top: 0px;
+  clear: both;
+}
+
+/********************************
+    Right sidebar
+ ********************************/
+#right-sidebar h1{
+    font-size: 1.5em;
+}
+
+/********************************
+    Tables
+ ********************************/
+@media (max-width: 379px) {
+    .hidden-xxxs {
+        display: none;
+    }
+}
+
+@media (max-width: 518px) {
+    .hidden-xxs {
+        display: none;
+    }
+}
+
+td, th {
+    padding: 0.5em;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th {
+    background-color: #ffc7b2;
+    font-size: 1.2em;
+}
+
+caption {
+    font-size: 2em;
+    color: #777;
+    font-family: Nunito, Arial, sans-serif;
+    padding: 0 0 25px 10px;
+}
+
+caption p {
+    font-size: 0.55em;
+}
+
+caption a {
+    text-decoration: none;
+}
+
+.wide-col {
+    width: 40%;
+}
+
+.extra-wide-col {
+    width: 50%;
+}
+
+.nsfw {
+    color: red;
+}
+
+/* Necessary to align the ordering triangle vertically */
+th > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.arrow-up {
+    float: left;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+.arrow-down {
+    float: left;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+
+/* Have to compensate for the space that the ordering triangle takes */
+.first-th {
+    padding-left: 20px; !important
+}
+
+.header-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+/* These styles allow to break long words, the last one is just for buttons text */
+
+table {
+    table-layout: fixed;
+}
+
+table td {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.btn-link {
+    height: 100%;
+    width: 100%;
+    white-space: normal;
+    padding: 0;
+}
+
+/********************************
+    Paging
+ ********************************/
+.paging {
+    margin: 25px 0;
+ }
+
+.paging li{
+    padding: 5px 10px;
+    margin: 5px;
+    background: #eee;
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 1.2em;
+    color: ;
+}
+
+.paging li.deactivated-page {
+    background: transparent;
+}
+
+/********************************
+    Footer
+ ********************************/
+footer {
+    background-color: #ddd;
+    padding: 15px 0;
+
+}
+
+@media (max-width: 379px) {
+    #viperchill img {
+        width: 54px;
+        heigt: 28px;
+    }
+}

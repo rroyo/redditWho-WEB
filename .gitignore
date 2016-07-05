@@ -1,0 +1,30 @@
+# Rule number 1: It is not possible to re-include a file if a parent directory of that file is excluded.
+# Rule number 2: Apply rule number 1!
+
+# Ignore everything
+/*.*
+artisan
+bootstrap
+config
+database
+storage
+tests
+vendor
+git
+app/*
+app/Http/Requests
+app/Http/Middleware
+app/Http/Kernel.php
+resources/*
+*.bck       #Backup files
+
+# Ignored because of the different local IPs
+# app/Http/Controllers/SubredditController.php
+
+
+# Excludes
+!.gitignore
+!public
+!resources/Views
+!app/Http
+!app/Models
